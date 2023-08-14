@@ -163,18 +163,17 @@
     padding: 8px;
   }
   .card-picture img{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px;
   }
   .wave{
     width: 100%;
     position: absolute;
-    top: 150px;
+    top: 100px;
     z-index: 2;
-    top: 70px;
-  }
+     }
   .contact-text{
     display: flex;
     justify-content: center;
