@@ -8,20 +8,24 @@
   </head>
   <body>
     <header class="front">
-      <div class="logo">
-        <img src="./assets/image/logobomba10.png" alt="logo-bomba10" />
-      </div>
-      <div class="video">
-        <video muted autoplay loop>
-          <source src="./assets/video/videofront.MP4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="text">
-        <h1 class="title">
-          <span class="title-word title-word-1">Bomberos</span>
-          <span class="title-word title-word-2">de</span>
-          <span class="title-word title-word-3">Santiago</span>
-        </h1>
+      <div class="front__container">
+        <div class="front__video">
+          <video muted autoplay loop>
+            <source src="./assets/video/videofront.MP4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="front__items">
+          <div class="front__logo">
+            <img src="./assets/image/logobomba10.png" alt="logo-bomba10" />
+          </div>
+          <div class="front__text">
+            <h1 class="front__title">
+              <span class="title-word title-word-1">Bomberos</span>
+              <span class="title-word title-word-2">de</span>
+              <span class="title-word title-word-3">Santiago</span>
+            </h1>
+          </div>
+        </div>
       </div>
     </header>
     <section class="card">
@@ -31,16 +35,21 @@
       <div class="card-1">
         <div class="content-picture">
           <img src="./assets/image/bomba1.png" alt="carro bomba uno" />
-          <p>Lorem ipsum dolor sit.</p>
+          <p>
+            Lorem ipsum dolor sit.
+          </p>
         </div>
+
         <div class="content-picture">
           <img src="./assets/image/bomba2.png" alt="carro bomba dos" />
           <p>Lorem ipsum dolor sit.</p>
         </div>
+
         <div class="content-picture">
           <img src="./assets/image/bomba3.png" alt="carro bomba tres" />
           <p>Lorem ipsum dolor sit.</p>
         </div>
+
         <div class="content-picture">
           <img src="./assets/image/bomba4.png" alt="carro bomba cuatro" />
           <p>Lorem ipsum dolor sit.</p>
@@ -65,12 +74,14 @@
       </div>
     </section>
     <section class="contact">
+      <div class="contact-text">
+        <h2>BOMBA ESPAÑA</h2>
+      </div>
       <div class="card-picture">
         <img src="./assets/image/bombero10.jpg" alt="bomberos" />
       </div>
-      <div class="contact-text">
-        <h2>BOMBA ESPAÑA</h2>
 
+      <div class="contact-text">
         <p>
           El 19 de junio, en los salones del Directorio del Cuerpo de Bomberos
           de Santiago, se instala la Décima Compañía de Bomberos de Santiago,
@@ -81,9 +92,6 @@
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.6631168683666!2d-70.64345882430587!3d-33.45808239790309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56c35db5971%3A0x7e4d6c1eeedac3e0!2sAv.%20Manuel%20Antonio%20Matta%20576%2C%208360058%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1691982378439!5m2!1ses-419!2scl"
-        width="450"
-        height="350"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
