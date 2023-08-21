@@ -17,13 +17,29 @@
   background-color: #a26900;
   height: 48px;
   padding: 10px 12px;
-  position: relative;
-  top: -135px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 
 }
+.front__video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  display: none;
+  z-index: 999;}
+
+  .checkbox:checked ~ .front__video::before {
+    display: block;
+  }
 .front__navbar img{
   width: 40px;
   height: 40px;
@@ -36,7 +52,8 @@
   top: 10px;
   right: 12px;
   cursor: pointer;
-  color: #f4af3c
+  color: #f4af3c;
+  z-index: 1001;
 }
 .fi{
   pointer-events: none;
@@ -56,11 +73,16 @@
 }
 .menu{
   width: 200px;
-  position: absolute;
-  top: -120px;
-  z-index: -1;
+  position: fixed;
+  top: 0px;
   right: 0;
  transition: 250ms;
+ background-color: #a26900;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 998;
+
 }
 .menu li a{
   display: block;
@@ -72,7 +94,7 @@
   background-color: #a26900;
 }
 .checkbox:checked ~ .menu{
-  top: 48px
+  transform: translateY(31%);
 }
 
 .front {
@@ -93,7 +115,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: -1;
 }
 
 .front__items {
