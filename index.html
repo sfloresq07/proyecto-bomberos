@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Bomberos Santiago</title>
   </head>
   <body>
-    <header class="front">
+    <header class="front" id="inicio">
       <div class="front__container">
         <nav class="front__navbar">
           <img src="./assets/image/logobomba10.png" alt="logo-bomba10" />
@@ -20,16 +26,16 @@
           <i class="fi fi-ss-apps-delete"></i>
           <ul class="menu">
             <li>
-              <a href="#">Inicio</a>
+              <a href="#inicio">Inicio</a>
             </li>
             <li>
-              <a href="#">Carros Bombas</a>
+              <a href="#carros">Carros Bombas</a>
             </li>
             <li>
-              <a href="#">Emergencias</a>
+              <a href="#emergencias">Emergencias</a>
             </li>
             <li>
-              <a href="#">Bomba España</a>
+              <a href="#bomba">Bomba España</a>
             </li>
           </ul>
         </nav>
@@ -39,7 +45,7 @@
           </video>
         </div>
         <div class="front__items">
-            <div class="front__text">
+          <div class="front__text">
             <h1 class="front__title">
               <span class="title-word title-word-1">Bomberos</span>
               <span class="title-word title-word-2">de</span>
@@ -51,50 +57,49 @@
     </header>
     <section class="card">
       <div class="card-text">
-        <h2>CARROS BOMBA</h2>
+        <h2 id="carros">CARROS BOMBA</h2>
       </div>
       <div class="card-1">
         <div class="content-picture">
           <img src="./assets/image/bomba1.png" alt="carro bomba uno" />
-          <p>Lorem ipsum dolor sit.</p>
+          <p>B10-CBS</p>
+        </div>
+        <div class="content-picture">
+          <img src="./assets/image/bomba2.png" alt="carro bomba uno" />
+          <p>M7-CBS</p>
         </div>
 
         <div class="content-picture">
-          <img src="./assets/image/bomba2.png" alt="carro bomba dos" />
-          <p>Lorem ipsum dolor sit.</p>
+          <img src="./assets/image/bomba3.png" alt="carro bomba uno" />
+          <p>Q8-CBS</p>
         </div>
 
         <div class="content-picture">
-          <img src="./assets/image/bomba3.png" alt="carro bomba tres" />
-          <p>Lorem ipsum dolor sit.</p>
-        </div>
-
-        <div class="content-picture">
-          <img src="./assets/image/bomba4.png" alt="carro bomba cuatro" />
-          <p>Lorem ipsum dolor sit.</p>
+          <img src="./assets/image/bomba4.png" alt="carro bomba uno" />
+          <p>Q6-CBS|B10-CBS</p>
         </div>
       </div>
       <div class="card-text">
-        <h2>Emergencias</h2>
+        <h2 id="emergencias">Emergencias</h2>
       </div>
       <div class="card-2">
         <div class="content-picture">
           <img src="./assets/image/emergencia1.png" alt="emergencia uno" />
-          <p>Lorem ipsum dolor sit.</p>
+          <p>2da Alarma por fuego en casas</p>
         </div>
         <div class="content-picture">
           <img src="./assets/image/emergencia2.jpg" alt="emergencia dos" />
-          <p>Lorem ipsum dolor sit.</p>
+          <p>Intersecciones de Irene Freí y John Kennedy</p>
         </div>
         <div class="content-picture">
           <img src="./assets/image/emergencia3.jpg" alt="emergencia tres" />
-          <p>Lorem ipsum dolor sit.</p>
+          <p>Alarma en las intersecciones de Av Matta y Santiago Concha</p>
         </div>
       </div>
     </section>
     <section class="contact">
       <div class="contact-text">
-        <h2>BOMBA ESPAÑA</h2>
+        <h2 id="bomba">BOMBA ESPAÑA</h2>
       </div>
       <div class="card-picture">
         <img src="./assets/image/bombero10.jpg" alt="bomberos" />
@@ -102,10 +107,8 @@
 
       <div class="contact-text">
         <p>
-          El 19 de junio, en los salones del Directorio del Cuerpo de Bomberos
-          de Santiago, se instala la Décima Compañía de Bomberos de Santiago,
-          con la elección de su oficialidad definitiva, conforme al reglamento
-          aprobado el día 15 del mismo mes.
+          Décima Compañía de Bomberos de Santiago, ubicada en av. Matta 576,
+          Santiago.
         </p>
       </div>
 
@@ -117,6 +120,26 @@
       ></iframe>
     </section>
     <footer>
+      <div class="rrss">
+        <a href="https://www.instagram.com/bomba_decima"
+          ><i class="fa fa-instagram" target="_blank"></i
+        ></a>
+        <a href="https://twitter.com/Bomba_Decima" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            version="1.1"
+          >
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://web.facebook.com/BombaDecima/" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </div>
       <p><span> &copy; 2023 </span> Desarrollado por Sandra Flores</p>
     </footer>
   </body>
