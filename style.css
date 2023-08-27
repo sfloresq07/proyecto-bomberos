@@ -213,7 +213,7 @@
     overflow-x: auto;
     grid-gap: 1.5rem;
     grid-auto-columns: minmax(45%, 1fr);
-    padding: 15px;
+    padding: 20px;
   } 
   .card-2 {
     display: grid;
@@ -222,7 +222,7 @@
     overflow-x: auto;
     grid-gap: 2rem;
     grid-auto-columns: minmax(95%, 1fr);
-    padding: 15px;
+    padding: 20px;
   }
 
   .content-picture {
